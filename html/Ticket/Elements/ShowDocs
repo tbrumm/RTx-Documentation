@@ -1,0 +1,12 @@
+% if( $documentation ) {
+<&| /Widgets/TitleBox, title => loc('Workflow Documentation') &>
+    <br />
+    <% $documentation %>
+</&>
+% }
+<%INIT>
+my $documentation = $QueueObj->Documentation if( $QueueObj and $QueueObj->id );
+</%INIT>
+<%ARGS>
+$QueueObj => undef
+</%ARGS>

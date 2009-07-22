@@ -1,0 +1,9 @@
+<br />
+<& /Ticket/Elements/ShowDocs, QueueObj => $QueueObj &>
+<%INIT>
+my $TicketObj = LoadTicket($ARGSRef->{id});
+my $QueueObj = $TicketObj->QueueObj;
+</%INIT>
+<%ARGS>
+$ARGSRef => undef
+</%ARGS>
