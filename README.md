@@ -36,7 +36,7 @@ INSTALLATION
 Usage
   1. Go to Configuration->CustomFields
   2. Select CF "Documentation" and let it apply to the Queue where you
-     the feature.
+     need the documentation feature.
   3. Go to Configuration -> Queues and edit the Documentation Field
 
   
