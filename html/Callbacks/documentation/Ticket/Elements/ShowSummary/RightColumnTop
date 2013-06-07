@@ -1,0 +1,4 @@
+<& /Ticket/Elements/ShowDocs, QueueObj => $Ticket->QueueObj &>
+<%ARGS>
+$Ticket => undef
+</%ARGS>
