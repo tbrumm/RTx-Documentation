@@ -16,4 +16,12 @@
 # You should have received a copy of the GNU General Public License
 # along with RTx-Documentation.  If not, see <http://www.gnu.org/licenses/>.
 
-1;
+@CustomFields = (
+    {
+        Name => 'Documentation',
+        Type => 'Wikitext',
+        LookupType => 'RT::Queue-RT::Queue',
+        Disabled => 0,
+        Description => 'Documentation Field for Queue Documentation'
+    }
+)
