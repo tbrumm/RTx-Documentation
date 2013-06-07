@@ -1,11 +1,10 @@
 % if( $documentation ) {
 <&| /Widgets/TitleBox, title => loc('Workflow Documentation') &>
-    <br />
-    <% $documentation %>
+    <& /Elements/ShowCustomFields, Object => $QueueObj &>
 </&>
 % }
 <%INIT>
-my $documentation = $QueueObj->Documentation if( $QueueObj and $QueueObj->id );
+my $documentation = $QueueObj->FirstCustomFieldValue( 'Documentation' ) if( $QueueObj and $QueueObj->id );
 </%INIT>
 <%ARGS>
 $QueueObj => undef
